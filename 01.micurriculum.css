@@ -16,65 +16,78 @@ body > section {
     max-width: 800px;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Aumenté un poco el margen inferior */
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra un poco más pronunciada */
+    padding: 20px; /* Ajusté el padding */
 }
 
 /* Estilos del encabezado principal */
 #ENCABEZADO_PRINCIPAL {
     text-align: center;
-    padding: 2rem;
-    margin-bottom: 20px;
+    padding: 2.5rem; /* Ajusté el padding */
+    margin-bottom: 25px; /* Aumenté un poco el margen inferior */
 }
 
 #ENCABEZADO_PRINCIPAL img {
-    width: 100px;
-    height: 100px;
+    width: 120px; /* Aumenté un poco el tamaño de la foto */
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid #ddd;
+    margin-bottom: 1.2rem; /* Ajusté el margen inferior */
+    border: 4px solid #ddd; /* Borde un poco más grueso */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave en la foto */
 }
 
 #ENCABEZADO_PRINCIPAL h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2.5rem;
+    margin-bottom: 0.6rem; /* Ajusté el margen inferior */
+    font-size: 2.8rem; /* Aumenté un poco el tamaño del título */
     color: #007bff;
 }
 
 #ENCABEZADO_PRINCIPAL p {
-    font-size: 1.1rem;
+    font-size: 1.15rem; /* Ajusté el tamaño del texto de contacto */
     color: #555;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem; /* Ajusté el margen inferior */
 }
 
-#ENCABEZADO_PRINCIPAL span a {
+#ENCABEZADO_PRINCIPAL span {
     font-weight: bold;
 }
 
 #ENCABEZADO_PRINCIPAL .info-contacto {
     background-color: #e0f7fa;
     color: #00838f;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    margin-top: 1rem;
+    padding: 1rem 1.8rem; /* Ajusté el padding */
+    border-radius: 7px; /* Bordes un poco más redondeados */
+    margin-top: 1.2rem; /* Ajusté el margen superior */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Sombra suave en el botón */
+}
+
+#ENCABEZADO_PRINCIPAL .info-contacto a {
+    color: inherit; /* Heredar el color del span */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#ENCABEZADO_PRINCIPAL .info-contacto a:hover {
+    text-decoration: underline;
 }
 
 /* Estilos de los títulos de las secciones */
 h2 {
     color: #007bff;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
+    border-bottom: 3px solid #007bff; /* Borde inferior un poco más grueso */
+    padding-bottom: 0.6rem; /* Ajusté el padding inferior */
+    margin-bottom: 1.2rem; /* Ajusté el margen inferior */
+    font-size: 2.2rem; /* Aumenté un poco el tamaño del título de sección */
 }
 
 /* Estilos para la sección "ACERCA DE MÍ" */
 #ACERCA\ DE\ MÍ p {
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
+    line-height: 1.6; /* Ajusté el espaciado entre líneas */
+    margin-bottom: 1rem; /* Ajusté el margen inferior */
+    font-size: 1.05rem; /* Ajusté el tamaño de la fuente */
 }
 
 #ACERCA\ DE\ MÍ a {
@@ -94,12 +107,11 @@ h2 {
 
 /* Estilos para la sección "EDUCACIÓN" */
 #EDUCACION p {
-    line-height: 1.5;
-    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem; /* Ajusté el margen inferior */
     font-weight: bold;
     color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.05rem; /* Ajusté el tamaño de la fuente */
 }
 
 #EDUCACION p b {
@@ -110,31 +122,33 @@ h2 {
 #HABILIDADES {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    padding-left: 1rem; /* Añadir un poco de espacio a la izquierda para las viñetas */
+    gap: 0.6rem; /* Ajusté el espacio entre habilidades */
+    padding-left: 1.2rem; /* Ajusté el padding izquierdo */
 }
 
 #HABILIDADES ul {
     list-style-type: square;
     padding-left: 1rem;
-    margin-bottom: 0; /* Eliminar el margen inferior predeterminado de la ul */
+    margin-bottom: 0;
 }
 
 #HABILIDADES li {
     background-color: #e0f7fa;
     color: #00838f;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
+    padding: 0.6rem 1.2rem; /* Ajusté el padding */
+    border-radius: 7px; /* Bordes un poco más redondeados */
+    margin-bottom: 0.6rem; /* Ajusté el margen inferior */
     display: inline-block;
-    font-size: 0.95rem;
+    font-size: 1rem; /* Ajusté el tamaño de la fuente */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Sombra suave en las etiquetas */
 }
 
 /* Estilos para la sección "EXPERIENCIA LABORAL" */
 #EXPERIENCIA_LABORAL p {
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 1rem; /* Ajusté el margen inferior */
     color: #555;
+    font-size: 1.05rem; /* Ajusté el tamaño de la fuente */
 }
 
 #EXPERIENCIA_LABORAL b {
@@ -153,13 +167,14 @@ h2 {
 }
 
 #EXPERIENCIA_LABORAL ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1rem;
+    padding-left: 1.8rem; /* Ajusté el padding izquierdo */
+    margin-bottom: 1.2rem; /* Ajusté el margen inferior */
 }
 
 #EXPERIENCIA_LABORAL li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem; /* Ajusté el margen inferior */
     color: #777;
+    font-size: 1rem; /* Ajusté el tamaño de la fuente */
 }
 
 #EXPERIENCIA_LABORAL span {
