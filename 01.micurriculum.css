@@ -102,3 +102,67 @@ h2 {
     margin-bottom: 0.3rem;
 }
 
+#EDUCACION p b {
+    color: #333;
+}
+
+/* Estilos para la sección "HABILIDADES" */
+#HABILIDADES {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-left: 1rem; /* Añadir un poco de espacio a la izquierda para las viñetas */
+}
+
+#HABILIDADES ul {
+    list-style-type: square;
+    padding-left: 1rem;
+    margin-bottom: 0; /* Eliminar el margen inferior predeterminado de la ul */
+}
+
+#HABILIDADES li {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+/* Estilos para la sección "EXPERIENCIA LABORAL" */
+#EXPERIENCIA_LABORAL p {
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+#EXPERIENCIA_LABORAL b {
+    font-weight: bold;
+    color: #333;
+}
+
+#EXPERIENCIA_LABORAL a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#EXPERIENCIA_LABORAL a:hover {
+    text-decoration: underline;
+}
+
+#EXPERIENCIA_LABORAL ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#EXPERIENCIA_LABORAL li {
+    margin-bottom: 0.5rem;
+    color: #777;
+}
+
+#EXPERIENCIA_LABORAL span {
+    font-weight: bold;
+    color: #444;
+}
