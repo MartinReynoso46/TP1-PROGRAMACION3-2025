@@ -1,132 +1,82 @@
 /* Estilos generales del cuerpo */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 20px;
-    background-color: #f9f9f9; /* Fondo sutilmente más claro */
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
     color: #333;
-    display: flex;
-    justify-content: center; /* Centrar el contenido principal */
-    align-items: flex-start; /* Alinear el contenido desde la parte superior */
-    min-height: 100vh; /* Asegurar que el fondo cubra toda la pantalla */
-}
-
-/* Contenedor principal del currículum */
-body > * {
-    max-width: 800px; /* Ancho máximo para una lectura cómoda */
-    width: 100%;
-}
-
-/* Estilos del encabezado */
-header {
-    background-color: #fff;
-    color: #333;
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header img {
-    width: 100px; /* Tamaño de la foto de CV */
-    height: 100px;
-    border-radius: 50%; /* Hacerla circular */
-    object-fit: cover; /* Recortar la imagen para que quepa en el círculo */
-    margin-bottom: 1rem;
-    border: 3px solid #ddd; /* Borde sutil para la foto */
-}
-
-header h1 {
-    margin-bottom: 0.5rem;
-    font-size: 2.2rem;
-    color: #007bff; /* Color principal llamativo */
-}
-
-header p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 0;
-}
-
-/* Estilos de las secciones */
-section {
+/* Contenedor principal del currículum */
+body > section {
+    max-width: 800px;
+    width: 100%;
     background-color: #fff;
-    padding: 1.5rem;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
 }
 
-section h2 {
-    color: #007bff; /* Color principal llamativo */
+/* Estilos del encabezado principal */
+#ENCABEZADO_PRINCIPAL {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 20px;
+}
+
+#ENCABEZADO_PRINCIPAL img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #ddd;
+}
+
+#ENCABEZADO_PRINCIPAL h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+#ENCABEZADO_PRINCIPAL p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+#ENCABEZADO_PRINCIPAL span a {
+    font-weight: bold;
+}
+
+#ENCABEZADO_PRINCIPAL .info-contacto {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Estilos de los títulos de las secciones */
+h2 {
+    color: #007bff;
     border-bottom: 2px solid #007bff;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
-/* Estilos de los artículos (si los usas dentro de las secciones) */
-article {
-    margin-bottom: 1rem;
+/* Estilos para la sección "ACERCA DE MÍ" */
+#ACERCA\ DE\ MÍ p {
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
 }
 
-article h3 {
-    color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-}
-
-article p {
-    color: #777;
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 0.7rem;
-}
-
-/* Estilos específicos para la sección de EDUCACIÓN */
-#EDUCACION p {
-    margin-bottom: 0.5rem;
-    font-weight: bold; /* Resaltar los títulos educativos */
-    color: #444;
-}
-
-#EDUCACION p:not(:first-child) {
-    font-weight: normal; /* Dejar el texto descriptivo normal */
-}
-
-/* Estilos específicos para la sección de HABILIDADES */
-#HABILIDADES p {
-    background-color: #e0f7fa; /* Fondo claro para las habilidades */
-    color: #00838f; /* Color de texto distintivo */
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-    display: inline-block; /* Para que ocupen solo el ancho necesario */
-    margin-right: 0.5rem;
-    font-size: 0.95rem;
-}
-
-/* Estilos específicos para la sección de TRABAJO */
-#TRABAJO p {
-    font-size: 1.1rem;
-    color: #555;
-}
-
-#TRABAJO a {
-    color: #007bff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#TRABAJO a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para el enlace en "ACERCA DE MÍ" */
 #ACERCA\ DE\ MÍ a {
     color: #007bff;
     font-weight: bold;
@@ -138,6 +88,81 @@ article p {
 }
 
 #ACERCA\ DE\ MÍ b {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Estilos para la sección "EDUCACIÓN" */
+#EDUCACION p {
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+#EDUCACION p b {
+    color: #333;
+}
+
+/* Estilos para la sección "HABILIDADES" */
+#HABILIDADES {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding-left: 1rem; /* Añadir un poco de espacio a la izquierda para las viñetas */
+}
+
+#HABILIDADES ul {
+    list-style-type: square;
+    padding-left: 1rem;
+    margin-bottom: 0; /* Eliminar el margen inferior predeterminado de la ul */
+}
+
+#HABILIDADES li {
+    background-color: #e0f7fa;
+    color: #00838f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 0.95rem;
+}
+
+/* Estilos para la sección "EXPERIENCIA LABORAL" */
+#EXPERIENCIA_LABORAL p {
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+    color: #555;
+}
+
+#EXPERIENCIA_LABORAL b {
+    font-weight: bold;
+    color: #333;
+}
+
+#EXPERIENCIA_LABORAL a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#EXPERIENCIA_LABORAL a:hover {
+    text-decoration: underline;
+}
+
+#EXPERIENCIA_LABORAL ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#EXPERIENCIA_LABORAL li {
+    margin-bottom: 0.5rem;
+    color: #777;
+}
+
+#EXPERIENCIA_LABORAL span {
     font-weight: bold;
     color: #444;
 }
