@@ -174,7 +174,7 @@ h2 {
 #EXPERIENCIA_LABORAL li {
     margin-bottom: 0.6rem; /* Ajusté el margen inferior */
     color: #777;
-     /* Ajusté el tamaño de la fuente */
+    font-size: 1rem; /* Ajusté el tamaño de la fuente */
 }
 
 #EXPERIENCIA_LABORAL span {
